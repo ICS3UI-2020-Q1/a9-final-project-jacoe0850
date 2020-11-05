@@ -5,64 +5,25 @@ import java.awt.event.*;
 public class Main implements Runnable, ActionListener{
 
   // Class Variables  
+  JPanel question200Zero;
   JPanel mainPanel;
+  JPanel questionBoard;
 
   JTextField firstLabel;
   JTextField secondLabel;
   JTextField thirdLabel;
   JTextField fourthLabel;
 
-  JButton[] pointValue;  
+  JButton[] pointValue200;
+  JButton[] pointValue400;
+  JButton[] pointValue600;
+  JButton[] pointValue800;
+  JButton[] pointValue1000;  
 
-  JLabel first200answer;
-  JLabel first400answer;
-  JLabel first600answer;
-  JLabel first800answer;
-  JLabel first1000answer;
-
-  JLabel second200answer;
-  JLabel second400answer;
-  JLabel second600answer;
-  JLabel second800answer;
-  JLabel second1000answer;
-
-  JLabel third200answer;
-  JLabel third400answer;
-  JLabel third600answer;
-  JLabel third800answer;
-  JLabel third1000answer;
-
-  JLabel fourth200answer;
-  JLabel fourth400answer;
-  JLabel fourth600answer;
-  JLabel fourth800answer;
-  JLabel fourth1000answer;
-
-  JTextField first200question;
-  JTextField first400question;
-  JTextField first600question;
-  JTextField first800question;
-  JTextField first1000question;
-
-  JTextField second200question;
-  JTextField second400question;
-  JTextField second600question;
-  JTextField second800question;
-  JTextField second1000question;
-
-  JTextField third200question;
-  JTextField third400question;
-  JTextField third600question;
-  JTextField third800question;
-  JTextField third1000question;
-
-  JTextField fourth200question;
-  JTextField fourth400question;
-  JTextField fourth600question;
-  JTextField fourth800question;
-  JTextField fourth1000question;
+  JLabel vg200q;
+  JTextField answerboxvg200q;
   
-
+  CardLayout screens;
 
   // Method to assemble our GUI
   public void run(){
@@ -74,36 +35,104 @@ public class Main implements Runnable, ActionListener{
     frame.setSize(800,600);
     // shows the window
     frame.setVisible(true);
-
+    //enlarges and changes the font style for the textfields above prices
     Font labelFont = new Font("arial", Font.PLAIN, 30);
     //turns on manuel layout
-    mainPanel = new JPanel();
-    mainPanel.setLayout(new BorderLayout());
-    //adds mainPanel to the frame
-    frame.add(mainPanel);
-
+    questionBoard = new JPanel();
+    // sets the genres in the top of screen
+    questionBoard.setLayout(new BorderLayout());
+    //adds questionBoard to the frame
+    frame.add(questionBoard);
+    // Make gridPanel
     JPanel gridPanel = new JPanel();
+    // declares the size of the grid panel in buttons
     gridPanel.setLayout(new GridLayout(5,4));
-    pointValue = new JButton[20];
+    // declaring the size of each button's arrays
+    pointValue200 = new JButton[4];
+    pointValue400 = new JButton[4];
+    pointValue600 = new JButton[4];
+    pointValue800 = new JButton[4];
+    pointValue1000 = new JButton[4];
 
-
-   for(int i = 0; i < pointValue.length; i++){
+    //Creates the buttons for the 200$ using a for loop and adds to panel
+   for(int i = 0; i < pointValue200.length; i++){
       // create button with no text
-      pointValue[i] = new JButton("");
+      pointValue200[i] = new JButton("200$ " + i);
+      
       // add actionListener
-      pointValue[i].addActionListener(this);
+      pointValue200[i].addActionListener(this);
       // set action command to the number
       String questionNum = String.valueOf(i);
-      pointValue[i].setActionCommand(questionNum);
+      pointValue200[i].setActionCommand("200" + questionNum);
 
       // add to panel
-      gridPanel.add(pointValue[i]);
+      gridPanel.add(pointValue200[i]);
+    }
+    //Creates the buttons for the 400$ using a for loop and adds to panel
+    for(int i = 0; i < pointValue400.length; i++){
+      // create button with no text
+      pointValue400[i] = new JButton("400$ " + i);
+      
+      // add actionListener
+      pointValue400[i].addActionListener(this);
+      // set action command to the number
+      String questionNum = String.valueOf(i);
+      pointValue400[i].setActionCommand("400" + questionNum);
+
+      // add to panel
+      gridPanel.add(pointValue400[i]);
+    }
+    //Creates the buttons for the 600$ using a for loop and adds to panel
+    for(int i = 0; i < pointValue600.length; i++){
+      // create button with no text
+      pointValue600[i] = new JButton("600$ " + i);
+      
+      // add actionListener
+      pointValue600[i].addActionListener(this);
+      // set action command to the number
+      String questionNum = String.valueOf(i);
+      pointValue600[i].setActionCommand("600" + questionNum);
+
+      // add to panel
+      gridPanel.add(pointValue600[i]);
+    }
+    //Creates the buttons for the 800$ using a for loop and adds to panel
+    for(int i = 0; i < pointValue800.length; i++){
+      // create button with no text
+      pointValue800[i] = new JButton("800$ " + i);
+      
+      // add actionListener
+      pointValue800[i].addActionListener(this);
+      // set action command to the number
+      String questionNum = String.valueOf(i);
+      pointValue800[i].setActionCommand("800" + questionNum);
+
+      // add to panel
+      gridPanel.add(pointValue800[i]);
+    }
+    //Creates the buttons for the 1000$ using a for loop and adds to panel
+    for(int i = 0; i < pointValue1000.length; i++){
+      // create button with no text
+      pointValue1000[i] = new JButton("1000$ " + i);
+      
+      // add actionListener
+      pointValue1000[i].addActionListener(this);
+      // set action command to the number
+      String questionNum = String.valueOf(i);
+      pointValue1000[i].setActionCommand("1000" + questionNum);
+
+      // add to panel
+      gridPanel.add(pointValue1000[i]);
     }
 
-    JPanel labelPanel = new JPanel();
-    labelPanel.setLayout(new GridLayout(1,4));
-    mainPanel.add(gridPanel, BorderLayout.CENTER);
 
+
+    JPanel labelPanel = new JPanel();
+    // set the size of genre's textfields
+    labelPanel.setLayout(new GridLayout(1,4));
+    // adds the border along the top
+    questionBoard.add(gridPanel, BorderLayout.CENTER);
+    // Fill in the border's textfields with genres, add to frame and change the font/ font size
     firstLabel = new JTextField("Video Game");
     labelPanel.add(firstLabel);
     firstLabel.setFont(labelFont);
@@ -121,13 +150,37 @@ public class Main implements Runnable, ActionListener{
     fourthLabel.setFont(labelFont);
     fourthLabel.setEnabled(false);
   
-    mainPanel.add(labelPanel, BorderLayout.PAGE_START);
+    questionBoard.add(labelPanel, BorderLayout.PAGE_START);
+//
+//
+//
+//
+//
+// setting up 200$ video game question
+
+  question200Zero = new JPanel();
+  vg200q = new JLabel("question here");
+  answerboxvg200q = new JTextField();
+
+  //create screen jpanel manager
+  screens = new CardLayout();
+  mainPanel = new JPanel();
+  mainPanel.setLayout(screens);
+  // add screens to CardLayout
+  mainPanel.add(questionBoard, "questionBoard");
+  mainPanel.add(question200Zero, "videoGame200");
+  frame.add(mainPanel);
+  screens.show(mainPanel, "questionBoard");
   }
 
   // method called when a button is pressed
   public void actionPerformed(ActionEvent e){
     // get the command from the action
     String command = e.getActionCommand();
+
+  if(command.equals("200" + "0")){
+    screens.show(mainPanel, "videoGame200");
+  }
 
   }
 
