@@ -25,6 +25,11 @@ public class Main implements Runnable, ActionListener{
   JPanel question800Two;
   JPanel question800Three;
 
+  JPanel question1000Zero;
+  JPanel question1000One;
+  JPanel question1000Two;
+  JPanel question1000Three;
+
   JPanel mainPanel;
   JPanel questionBoard;
 
@@ -59,6 +64,11 @@ public class Main implements Runnable, ActionListener{
   JTextField answerboxm800q;
   JTextField answerboxa800q;
   JTextField answerboxp800q;
+
+  JTextField answerboxvg1000q;
+  JTextField answerboxm1000q;
+  JTextField answerboxa1000q;
+  JTextField answerboxp1000q;
   
   CardLayout screens;
 
@@ -353,6 +363,46 @@ public class Main implements Runnable, ActionListener{
   question800Three.add(answerboxp800q);
   answerboxp800q.setBounds(300,400,200,15);
 
+  // setting up 1000$ video game question
+  question1000Zero = new JPanel();
+  question1000Zero.setLayout(null);
+  vg200q = new JLabel("The 2nd generation of XBOX");
+  answerboxvg1000q = new JTextField();
+  question1000Zero.add(vg200q);
+  vg200q.setBounds(230, 100, 700, 50);
+  question1000Zero.add(answerboxvg1000q);
+  answerboxvg1000q.setBounds(300,400,200,15);
+
+  // setting up 1000$ Marvel question
+  question1000One = new JPanel();
+  question1000One.setLayout(null);
+  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  answerboxm1000q = new JTextField();
+  question1000One.add(vg200q);
+  vg200q.setBounds(270, 100, 700, 50);
+  question1000One.add(answerboxm1000q);
+  answerboxm1000q.setBounds(300,400,200,15);
+
+  // setting up 1000$ animal question
+  question1000Two = new JPanel();
+  question1000Two.setLayout(null);
+  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  answerboxa1000q = new JTextField();
+  question1000Two.add(vg200q);
+  vg200q.setBounds(270, 100, 700, 50);
+  question1000Two.add(answerboxa1000q);
+  answerboxa1000q.setBounds(300,400,200,15);
+
+  // setting up 10000$ pokemon question
+  question1000Three = new JPanel();
+  question1000Three.setLayout(null);
+  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  answerboxp1000q = new JTextField();
+  question1000Three.add(vg200q);
+  vg200q.setBounds(270, 100, 700, 50);
+  question1000Three.add(answerboxp1000q);
+  answerboxp1000q.setBounds(300,400,200,15);
+
   //create screen jpanel manager
   screens = new CardLayout();
   mainPanel = new JPanel();
@@ -375,6 +425,10 @@ public class Main implements Runnable, ActionListener{
   mainPanel.add(question800One, "marvel800Zero");
   mainPanel.add(question800Two, "animal800Zero");
   mainPanel.add(question800Three, "pokemon800Zero");
+  mainPanel.add(question1000Zero, "videoGame1000Zero");
+  mainPanel.add(question1000One, "marvel1000Zero");
+  mainPanel.add(question1000Two, "animal1000Zero");
+  mainPanel.add(question1000Three, "pokemon1000Zero");
   frame.add(mainPanel);
   screens.show(mainPanel, "questionBoard");
   }
@@ -431,6 +485,18 @@ public class Main implements Runnable, ActionListener{
   }
   if(command.equals("800" + "3")){
     screens.show(mainPanel, "pokemon800Zero");
+  }
+  if(command.equals("1000" + "0")){
+    screens.show(mainPanel, "videoGame1000Zero");
+  }
+  if(command.equals("1000" + "1")){
+    screens.show(mainPanel, "marvel1000Zero");
+  }
+  if(command.equals("1000" + "2")){
+    screens.show(mainPanel, "animal1000Zero");
+  }
+  if(command.equals("1000" + "3")){
+    screens.show(mainPanel, "pokemon1000Zero");
   }
   }
   // Main method to start our program
