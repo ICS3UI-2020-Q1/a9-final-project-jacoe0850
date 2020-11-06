@@ -542,7 +542,7 @@ public class Main implements Runnable, ActionListener{
   public void actionPerformed(ActionEvent e){
     // get the command from the action
     String command = e.getActionCommand();
-
+  // if statements, if a button on questionboard is pressed it will take you to its question frame
   if(command.equals("200" + "0")){
     screens.show(mainPanel, "videoGame200Zero");
   }
@@ -602,6 +602,29 @@ public class Main implements Runnable, ActionListener{
   }
   if(command.equals("1000" + "3")){
     screens.show(mainPanel, "pokemon1000Zero");
+  }
+  // reads the textfield when enter button is pressed and puts the text into string variable
+  if(command.equals("enter")){
+    String answervg200 = answerboxvg200q.getText();
+    String answerm200 = answerboxm200q.getText();
+    String answera200 = answerboxa200q.getText();
+    String answerp200 = answerboxp200q.getText();
+    String answervg400 = answerboxvg400q.getText();
+    String answerm400 = answerboxm400q.getText();
+    String answera400 = answerboxa400q.getText();
+    String answerp400 = answerboxp400q.getText();
+    String answervg600 = answerboxvg600q.getText();
+    String answerm600 = answerboxm600q.getText();
+    String answera600 = answerboxa600q.getText();
+    String answerp600 = answerboxp600q.getText();
+    String answervg800 = answerboxvg800q.getText();
+    String answerm800 = answerboxm800q.getText();
+    String answera800 = answerboxa800q.getText();
+    String answerp800 = answerboxp800q.getText();
+    String answervg1000 = answerboxvg1000q.getText();
+    String answerm1000 = answerboxm1000q.getText();
+    String answera1000 = answerboxa1000q.getText();
+    String answerp1000 = answerboxp1000q.getText();
   }
   }
   // Main method to start our program
