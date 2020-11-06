@@ -214,6 +214,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(150, 100, 700, 50);
   question200Zero.add(answerboxvg200q);
   answerboxvg200q.setBounds(300,400,200,15);
+  enterButton = new JButton("ENTER ANSWER");
+  enterButton.setBounds(300,250,200,100);
+  question200Zero.add(enterButton);
+  enterButton.setActionCommand("enter");
 
   // setting up 200$ Marvel question
   question200One = new JPanel();
