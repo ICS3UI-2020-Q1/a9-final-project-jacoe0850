@@ -5,6 +5,9 @@ import java.awt.event.*;
 public class Main implements Runnable, ActionListener{
 
   // Class Variables  
+
+  int score;
+
   JPanel question200Zero;
   JPanel question200One;
   JPanel question200Two;
@@ -94,6 +97,8 @@ public class Main implements Runnable, ActionListener{
   JButton enterButtonm1000;
   JButton enterButtona1000;
   JButton enterButtonp1000;
+
+  JButton returnButton;
 
   CardLayout screens;
 
@@ -241,6 +246,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonvg200.setBounds(300,250,200,100);
   question200Zero.add(enterButtonvg200);
   enterButtonvg200.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question200Zero.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonvg200.addActionListener(this);
 
   // setting up 200$ Marvel question
   question200One = new JPanel();
@@ -255,6 +266,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonm200.setBounds(300,250,200,100);
   question200One.add(enterButtonm200);
   enterButtonm200.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question200One.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonm200.addActionListener(this);
 
   // setting up 200$ Animal question
   question200Two = new JPanel();
@@ -269,6 +286,12 @@ public class Main implements Runnable, ActionListener{
   enterButtona200.setBounds(300,250,200,100);
   question200Two.add(enterButtona200);
   enterButtona200.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question200Two.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtona200.addActionListener(this);
 
   // setting up 200$ Pokemon question
   question200Three = new JPanel();
@@ -283,6 +306,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonp200.setBounds(300,250,200,100);
   question200Three.add(enterButtonp200);
   enterButtonp200.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question200Three.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonp200.addActionListener(this);
 
   // setting up 400$ video game question
   question400Zero = new JPanel();
@@ -297,6 +326,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonvg400.setBounds(300,250,200,100);
   question400Zero.add(enterButtonvg400);
   enterButtonvg400.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question400Zero.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonvg400.addActionListener(this);
 
   // setting up 400$ Marvel question
   question400One = new JPanel();
@@ -311,6 +346,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonm400.setBounds(300,250,200,100);
   question400One.add(enterButtonm400);
   enterButtonm400.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question400One.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonm400.addActionListener(this);
 
   // setting up 400$ Animal question
   question400Two = new JPanel();
@@ -325,6 +366,12 @@ public class Main implements Runnable, ActionListener{
   enterButtona400.setBounds(300,250,200,100);
   question400Two.add(enterButtona400);
   enterButtona400.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question400Two.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtona400.addActionListener(this);
 
   // setting up 400$ Pokemon question
   question400Three = new JPanel();
@@ -339,6 +386,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonp400.setBounds(300,250,200,100);
   question400Three.add(enterButtonp400);
   enterButtonp400.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question400Three.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonp400.addActionListener(this);
 
   // setting up 600$ video game question
   question600Zero = new JPanel();
@@ -353,6 +406,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonvg600.setBounds(300,250,200,100);
   question600Zero.add(enterButtonvg600);
   enterButtonvg600.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question600Zero.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonvg600.addActionListener(this);
 
   // setting up 600$ Marvel question
   question600One = new JPanel();
@@ -367,6 +426,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonm600.setBounds(300,250,200,100);
   question600One.add(enterButtonm600);
   enterButtonm600.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question600One.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonm600.addActionListener(this);
 
   // setting up 600$ animal question
   question600Two = new JPanel();
@@ -381,6 +446,12 @@ public class Main implements Runnable, ActionListener{
   enterButtona600.setBounds(300,250,200,100);
   question600Two.add(enterButtona600);
   enterButtona600.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question600Two.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtona600.addActionListener(this);
 
   // setting up 600$ pokemon question
   question600Three = new JPanel();
@@ -395,6 +466,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonp600.setBounds(300,250,200,100);
   question600Three.add(enterButtonp600);
   enterButtonp600.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question600Three.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonp600.addActionListener(this);
 
   // setting up 800$ video game question
   question800Zero = new JPanel();
@@ -409,6 +486,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonvg800.setBounds(300,250,200,100);
   question800Zero.add(enterButtonvg800);
   enterButtonvg800.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question800Zero.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonvg800.addActionListener(this);
 
   // setting up 800$ Marvel question
   question800One = new JPanel();
@@ -423,6 +506,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonm800.setBounds(300,250,200,100);
   question800One.add(enterButtonm800);
   enterButtonm800.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question800One.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonm800.addActionListener(this);
 
   // setting up 800$ animal question
   question800Two = new JPanel();
@@ -437,6 +526,12 @@ public class Main implements Runnable, ActionListener{
   enterButtona800.setBounds(300,250,200,100);
   question800Two.add(enterButtona800);
   enterButtona800.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question800Two.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtona800.addActionListener(this);
 
   // setting up 800$ pokemon question
   question800Three = new JPanel();
@@ -451,6 +546,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonp800.setBounds(300,250,200,100);
   question800Three.add(enterButtonp800);
   enterButtonp800.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question800Three.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonp800.addActionListener(this);
 
   // setting up 1000$ video game question
   question1000Zero = new JPanel();
@@ -465,6 +566,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonvg1000.setBounds(300,250,200,100);
   question1000Zero.add(enterButtonvg1000);
   enterButtonvg1000.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question1000Zero.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonvg1000.addActionListener(this);
 
   // setting up 1000$ Marvel question
   question1000One = new JPanel();
@@ -479,6 +586,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonm1000.setBounds(300,250,200,100);
   question1000One.add(enterButtonm1000);
   enterButtonm1000.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question1000One.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonm1000.addActionListener(this);
 
   // setting up 1000$ animal question
   question1000Two = new JPanel();
@@ -493,6 +606,12 @@ public class Main implements Runnable, ActionListener{
   enterButtona1000.setBounds(300,250,200,100);
   question1000Two.add(enterButtona1000);
   enterButtona1000.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question1000Two.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtona1000.addActionListener(this);
 
   // setting up 1000$ pokemon question
   question1000Three = new JPanel();
@@ -507,6 +626,12 @@ public class Main implements Runnable, ActionListener{
   enterButtonp1000.setBounds(300,250,200,100);
   question1000Three.add(enterButtonp1000);
   enterButtonp1000.setActionCommand("enter");
+  returnButton = new JButton("RETURN TO BOARD");
+  returnButton.setBounds(10,450,200,100);
+  returnButton.setActionCommand("return");
+  question1000Three.add(returnButton);
+  returnButton.addActionListener(this);
+  enterButtonp1000.addActionListener(this);
 
   //create screen jpanel manager
   screens = new CardLayout();
@@ -545,63 +670,86 @@ public class Main implements Runnable, ActionListener{
   // if statements, if a button on questionboard is pressed it will take you to its question frame
   if(command.equals("200" + "0")){
     screens.show(mainPanel, "videoGame200Zero");
+    pointValue200[0].setEnabled(false);
   }
   if(command.equals("200" + "1")){
     screens.show(mainPanel, "marvel200Zero");
+    pointValue200[1].setEnabled(false);
   }
   if(command.equals("200" + "2")){
     screens.show(mainPanel, "animal200Zero");
+    pointValue200[2].setEnabled(false);
   }
   if(command.equals("200" + "3")){
     screens.show(mainPanel, "pokemon200Zero");
+    pointValue200[3].setEnabled(false);
   }
   if(command.equals("400" + "0")){
     screens.show(mainPanel, "videoGame400Zero");
+    pointValue400[0].setEnabled(false);
   }
   if(command.equals("400" + "1")){
     screens.show(mainPanel, "marvel400Zero");
+    pointValue400[1].setEnabled(false);
   }
   if(command.equals("400" + "2")){
     screens.show(mainPanel, "animal400Zero");
+    pointValue400[2].setEnabled(false);
   }
   if(command.equals("400" + "3")){
     screens.show(mainPanel, "pokemon400Zero");
+    pointValue400[3].setEnabled(false);
   }
   if(command.equals("600" + "0")){
     screens.show(mainPanel, "videoGame600Zero");
+    pointValue600[0].setEnabled(false);
   }
   if(command.equals("600" + "1")){
     screens.show(mainPanel, "marvel600Zero");
+    pointValue600[1].setEnabled(false);
   }
   if(command.equals("600" + "2")){
     screens.show(mainPanel, "animal600Zero");
+    pointValue600[2].setEnabled(false);
   }
   if(command.equals("600" + "3")){
     screens.show(mainPanel, "pokemon600Zero");
+    pointValue600[3].setEnabled(false);
   }
   if(command.equals("800" + "0")){
     screens.show(mainPanel, "videoGame800Zero");
+    pointValue800[0].setEnabled(false);
   }
   if(command.equals("800" + "1")){
     screens.show(mainPanel, "marvel800Zero");
+    pointValue800[1].setEnabled(false);
   }
   if(command.equals("800" + "2")){
     screens.show(mainPanel, "animal800Zero");
+    pointValue800[2].setEnabled(false);
   }
   if(command.equals("800" + "3")){
     screens.show(mainPanel, "pokemon800Zero");
+    pointValue800[3].setEnabled(false);
   }
   if(command.equals("1000" + "0")){
     screens.show(mainPanel, "videoGame1000Zero");
+    pointValue1000[0].setEnabled(false);
   }
   if(command.equals("1000" + "1")){
     screens.show(mainPanel, "marvel1000Zero");
+    pointValue1000[1].setEnabled(false);
   }
   if(command.equals("1000" + "2")){
     screens.show(mainPanel, "animal1000Zero");
+    pointValue1000[2].setEnabled(false);
   }
   if(command.equals("1000" + "3")){
     screens.show(mainPanel, "pokemon1000Zero");
+    pointValue1000[3].setEnabled(false);
+  }
+  if(command.equals("return")){
+    screens.show(mainPanel, "questionBoard");
   }
   // reads the textfield when enter button is pressed and puts the text into string variable
   if(command.equals("enter")){
