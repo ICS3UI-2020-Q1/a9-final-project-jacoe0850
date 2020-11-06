@@ -20,6 +20,11 @@ public class Main implements Runnable, ActionListener{
   JPanel question600Two;
   JPanel question600Three;
 
+  JPanel question800Zero;
+  JPanel question800One;
+  JPanel question800Two;
+  JPanel question800Three;
+
   JPanel mainPanel;
   JPanel questionBoard;
 
@@ -49,6 +54,11 @@ public class Main implements Runnable, ActionListener{
   JTextField answerboxm600q;
   JTextField answerboxa600q;
   JTextField answerboxp600q;
+
+  JTextField answerboxvg800q;
+  JTextField answerboxm800q;
+  JTextField answerboxa800q;
+  JTextField answerboxp800q;
   
   CardLayout screens;
 
@@ -283,7 +293,65 @@ public class Main implements Runnable, ActionListener{
   question600One.add(answerboxm600q);
   answerboxm600q.setBounds(300,400,200,15);
 
-  
+  // setting up 600$ animal question
+  question600Two = new JPanel();
+  question600Two.setLayout(null);
+  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  answerboxa600q = new JTextField();
+  question600Two.add(vg200q);
+  vg200q.setBounds(270, 100, 700, 50);
+  question600Two.add(answerboxa600q);
+  answerboxa600q.setBounds(300,400,200,15);
+
+  // setting up 600$ pokemon question
+  question600Three = new JPanel();
+  question600Three.setLayout(null);
+  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  answerboxp600q = new JTextField();
+  question600Three.add(vg200q);
+  vg200q.setBounds(270, 100, 700, 50);
+  question600Three.add(answerboxp600q);
+  answerboxp600q.setBounds(300,400,200,15);
+
+  // setting up 800$ video game question
+  question800Zero = new JPanel();
+  question800Zero.setLayout(null);
+  vg200q = new JLabel("The 2nd generation of XBOX");
+  answerboxvg800q = new JTextField();
+  question800Zero.add(vg200q);
+  vg200q.setBounds(230, 100, 700, 50);
+  question800Zero.add(answerboxvg800q);
+  answerboxvg800q.setBounds(300,400,200,15);
+
+  // setting up 800$ Marvel question
+  question800One = new JPanel();
+  question800One.setLayout(null);
+  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  answerboxm800q = new JTextField();
+  question800One.add(vg200q);
+  vg200q.setBounds(270, 100, 700, 50);
+  question800One.add(answerboxm800q);
+  answerboxm800q.setBounds(300,400,200,15);
+
+  // setting up 800$ animal question
+  question800Two = new JPanel();
+  question800Two.setLayout(null);
+  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  answerboxa800q = new JTextField();
+  question800Two.add(vg200q);
+  vg200q.setBounds(270, 100, 700, 50);
+  question800Two.add(answerboxa800q);
+  answerboxa800q.setBounds(300,400,200,15);
+
+  // setting up 800$ pokemon question
+  question800Three = new JPanel();
+  question800Three.setLayout(null);
+  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  answerboxp800q = new JTextField();
+  question800Three.add(vg200q);
+  vg200q.setBounds(270, 100, 700, 50);
+  question800Three.add(answerboxp800q);
+  answerboxp800q.setBounds(300,400,200,15);
 
   //create screen jpanel manager
   screens = new CardLayout();
@@ -301,6 +369,12 @@ public class Main implements Runnable, ActionListener{
   mainPanel.add(question400Three, "pokemon400Zero");
   mainPanel.add(question600Zero, "videoGame600Zero");
   mainPanel.add(question600One, "marvel600Zero");
+  mainPanel.add(question600Two, "animal600Zero");
+  mainPanel.add(question600Three, "pokemon600Zero");
+  mainPanel.add(question800Zero, "videoGame800Zero");
+  mainPanel.add(question800One, "marvel800Zero");
+  mainPanel.add(question800Two, "animal800Zero");
+  mainPanel.add(question800Three, "pokemon800Zero");
   frame.add(mainPanel);
   screens.show(mainPanel, "questionBoard");
   }
@@ -339,6 +413,24 @@ public class Main implements Runnable, ActionListener{
   }
   if(command.equals("600" + "1")){
     screens.show(mainPanel, "marvel600Zero");
+  }
+  if(command.equals("600" + "2")){
+    screens.show(mainPanel, "animal600Zero");
+  }
+  if(command.equals("600" + "3")){
+    screens.show(mainPanel, "pokemon600Zero");
+  }
+  if(command.equals("800" + "0")){
+    screens.show(mainPanel, "videoGame800Zero");
+  }
+  if(command.equals("800" + "1")){
+    screens.show(mainPanel, "marvel800Zero");
+  }
+  if(command.equals("800" + "2")){
+    screens.show(mainPanel, "animal800Zero");
+  }
+  if(command.equals("800" + "3")){
+    screens.show(mainPanel, "pokemon800Zero");
   }
   }
   // Main method to start our program
