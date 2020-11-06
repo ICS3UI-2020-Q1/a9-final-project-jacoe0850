@@ -70,7 +70,30 @@ public class Main implements Runnable, ActionListener{
   JTextField answerboxa1000q;
   JTextField answerboxp1000q;
   
-  JButton enterButton;
+  JButton enterButtonvg200;
+  JButton enterButtonm200;
+  JButton enterButtona200;
+  JButton enterButtonp200;
+
+  JButton enterButtonvg400;
+  JButton enterButtonm400;
+  JButton enterButtona400;
+  JButton enterButtonp400;
+
+  JButton enterButtonvg600;
+  JButton enterButtonm600;
+  JButton enterButtona600;
+  JButton enterButtonp600;
+
+  JButton enterButtonvg800;
+  JButton enterButtonm800;
+  JButton enterButtona800;
+  JButton enterButtonp800;
+
+  JButton enterButtonvg1000;
+  JButton enterButtonm1000;
+  JButton enterButtona1000;
+  JButton enterButtonp1000;
 
   CardLayout screens;
 
@@ -214,10 +237,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(150, 100, 700, 50);
   question200Zero.add(answerboxvg200q);
   answerboxvg200q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question200Zero.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonvg200 = new JButton("ENTER ANSWER");
+  enterButtonvg200.setBounds(300,250,200,100);
+  question200Zero.add(enterButtonvg200);
+  enterButtonvg200.setActionCommand("enter");
 
   // setting up 200$ Marvel question
   question200One = new JPanel();
@@ -228,10 +251,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(325, 100, 700, 50);
   question200One.add(answerboxm200q);
   answerboxm200q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question200One.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonm200 = new JButton("ENTER ANSWER");
+  enterButtonm200.setBounds(300,250,200,100);
+  question200One.add(enterButtonm200);
+  enterButtonm200.setActionCommand("enter");
 
   // setting up 200$ Animal question
   question200Two = new JPanel();
@@ -242,10 +265,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(275, 100, 700, 50);
   question200Two.add(answerboxa200q);
   answerboxa200q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question200Two.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtona200 = new JButton("ENTER ANSWER");
+  enterButtona200.setBounds(300,250,200,100);
+  question200Two.add(enterButtona200);
+  enterButtona200.setActionCommand("enter");
 
   // setting up 200$ Pokemon question
   question200Three = new JPanel();
@@ -256,10 +279,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(240, 100, 700, 50);
   question200Three.add(answerboxp200q);
   answerboxp200q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question200Three.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonp200 = new JButton("ENTER ANSWER");
+  enterButtonp200.setBounds(300,250,200,100);
+  question200Three.add(enterButtonp200);
+  enterButtonp200.setActionCommand("enter");
 
   // setting up 400$ video game question
   question400Zero = new JPanel();
@@ -270,10 +293,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(240, 100, 700, 50);
   question400Zero.add(answerboxvg400q);
   answerboxvg400q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question400Zero.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonvg400 = new JButton("ENTER ANSWER");
+  enterButtonvg400.setBounds(300,250,200,100);
+  question400Zero.add(enterButtonvg400);
+  enterButtonvg400.setActionCommand("enter");
 
   // setting up 400$ Marvel question
   question400One = new JPanel();
@@ -284,10 +307,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(180, 100, 700, 50);
   question400One.add(answerboxm400q);
   answerboxm400q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question400One.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonm400 = new JButton("ENTER ANSWER");
+  enterButtonm400.setBounds(300,250,200,100);
+  question400One.add(enterButtonm400);
+  enterButtonm400.setActionCommand("enter");
 
   // setting up 400$ Animal question
   question400Two = new JPanel();
@@ -298,10 +321,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(200, 100, 700, 50);
   question400Two.add(answerboxa400q);
   answerboxa400q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question400Two.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtona400 = new JButton("ENTER ANSWER");
+  enterButtona400.setBounds(300,250,200,100);
+  question400Two.add(enterButtona400);
+  enterButtona400.setActionCommand("enter");
 
   // setting up 400$ Pokemon question
   question400Three = new JPanel();
@@ -312,10 +335,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(230, 100, 700, 50);
   question400Three.add(answerboxp400q);
   answerboxp400q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question400Three.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonp400 = new JButton("ENTER ANSWER");
+  enterButtonp400.setBounds(300,250,200,100);
+  question400Three.add(enterButtonp400);
+  enterButtonp400.setActionCommand("enter");
 
   // setting up 600$ video game question
   question600Zero = new JPanel();
@@ -326,10 +349,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(230, 100, 700, 50);
   question600Zero.add(answerboxvg600q);
   answerboxvg600q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question600Zero.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonvg600 = new JButton("ENTER ANSWER");
+  enterButtonvg600.setBounds(300,250,200,100);
+  question600Zero.add(enterButtonvg600);
+  enterButtonvg600.setActionCommand("enter");
 
   // setting up 600$ Marvel question
   question600One = new JPanel();
@@ -340,10 +363,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(278, 100, 700, 50);
   question600One.add(answerboxm600q);
   answerboxm600q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question600One.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonm600 = new JButton("ENTER ANSWER");
+  enterButtonm600.setBounds(300,250,200,100);
+  question600One.add(enterButtonm600);
+  enterButtonm600.setActionCommand("enter");
 
   // setting up 600$ animal question
   question600Two = new JPanel();
@@ -354,10 +377,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(280, 100, 700, 50);
   question600Two.add(answerboxa600q);
   answerboxa600q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question600Two.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtona600 = new JButton("ENTER ANSWER");
+  enterButtona600.setBounds(300,250,200,100);
+  question600Two.add(enterButtona600);
+  enterButtona600.setActionCommand("enter");
 
   // setting up 600$ pokemon question
   question600Three = new JPanel();
@@ -368,10 +391,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(270, 100, 700, 50);
   question600Three.add(answerboxp600q);
   answerboxp600q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question600Three.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonp600 = new JButton("ENTER ANSWER");
+  enterButtonp600.setBounds(300,250,200,100);
+  question600Three.add(enterButtonp600);
+  enterButtonp600.setActionCommand("enter");
 
   // setting up 800$ video game question
   question800Zero = new JPanel();
@@ -382,10 +405,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(210, 100, 700, 50);
   question800Zero.add(answerboxvg800q);
   answerboxvg800q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question800Zero.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonvg800 = new JButton("ENTER ANSWER");
+  enterButtonvg800.setBounds(300,250,200,100);
+  question800Zero.add(enterButtonvg800);
+  enterButtonvg800.setActionCommand("enter");
 
   // setting up 800$ Marvel question
   question800One = new JPanel();
@@ -396,10 +419,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(270, 100, 700, 50);
   question800One.add(answerboxm800q);
   answerboxm800q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question800One.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonm800 = new JButton("ENTER ANSWER");
+  enterButtonm800.setBounds(300,250,200,100);
+  question800One.add(enterButtonm800);
+  enterButtonm800.setActionCommand("enter");
 
   // setting up 800$ animal question
   question800Two = new JPanel();
@@ -410,10 +433,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(240, 100, 700, 50);
   question800Two.add(answerboxa800q);
   answerboxa800q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question800Two.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtona800 = new JButton("ENTER ANSWER");
+  enterButtona800.setBounds(300,250,200,100);
+  question800Two.add(enterButtona800);
+  enterButtona800.setActionCommand("enter");
 
   // setting up 800$ pokemon question
   question800Three = new JPanel();
@@ -424,10 +447,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(260, 100, 700, 50);
   question800Three.add(answerboxp800q);
   answerboxp800q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question800Three.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonp800 = new JButton("ENTER ANSWER");
+  enterButtonp800.setBounds(300,250,200,100);
+  question800Three.add(enterButtonp800);
+  enterButtonp800.setActionCommand("enter");
 
   // setting up 1000$ video game question
   question1000Zero = new JPanel();
@@ -438,10 +461,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(230, 100, 700, 50);
   question1000Zero.add(answerboxvg1000q);
   answerboxvg1000q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question1000Zero.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonvg1000 = new JButton("ENTER ANSWER");
+  enterButtonvg1000.setBounds(300,250,200,100);
+  question1000Zero.add(enterButtonvg1000);
+  enterButtonvg1000.setActionCommand("enter");
 
   // setting up 1000$ Marvel question
   question1000One = new JPanel();
@@ -452,10 +475,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(270, 100, 700, 50);
   question1000One.add(answerboxm1000q);
   answerboxm1000q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question1000One.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonm1000 = new JButton("ENTER ANSWER");
+  enterButtonm1000.setBounds(300,250,200,100);
+  question1000One.add(enterButtonm1000);
+  enterButtonm1000.setActionCommand("enter");
 
   // setting up 1000$ animal question
   question1000Two = new JPanel();
@@ -466,12 +489,12 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(260, 100, 700, 50);
   question1000Two.add(answerboxa1000q);
   answerboxa1000q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question1000Two.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtona1000 = new JButton("ENTER ANSWER");
+  enterButtona1000.setBounds(300,250,200,100);
+  question1000Two.add(enterButtona1000);
+  enterButtona1000.setActionCommand("enter");
 
-  // setting up 10000$ pokemon question
+  // setting up 1000$ pokemon question
   question1000Three = new JPanel();
   question1000Three.setLayout(null);
   vg200q = new JLabel("The 2nd generation fire starter pokemon");
@@ -480,10 +503,10 @@ public class Main implements Runnable, ActionListener{
   vg200q.setBounds(260, 100, 700, 50);
   question1000Three.add(answerboxp1000q);
   answerboxp1000q.setBounds(300,400,200,15);
-  enterButton = new JButton("ENTER ANSWER");
-  enterButton.setBounds(300,250,200,100);
-  question1000Three.add(enterButton);
-  enterButton.setActionCommand("enter");
+  enterButtonp1000 = new JButton("ENTER ANSWER");
+  enterButtonp1000.setBounds(300,250,200,100);
+  question1000Three.add(enterButtonp1000);
+  enterButtonp1000.setActionCommand("enter");
 
   //create screen jpanel manager
   screens = new CardLayout();
