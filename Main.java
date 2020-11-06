@@ -70,6 +70,8 @@ public class Main implements Runnable, ActionListener{
   JTextField answerboxa1000q;
   JTextField answerboxp1000q;
   
+  JButton enterButton;
+
   CardLayout screens;
 
   // Method to assemble our GUI
@@ -296,27 +298,27 @@ public class Main implements Runnable, ActionListener{
   // setting up 600$ Marvel question
   question600One = new JPanel();
   question600One.setLayout(null);
-  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  vg200q = new JLabel("Stan Lee's hit catchphrase");
   answerboxm600q = new JTextField();
   question600One.add(vg200q);
-  vg200q.setBounds(270, 100, 700, 50);
+  vg200q.setBounds(278, 100, 700, 50);
   question600One.add(answerboxm600q);
   answerboxm600q.setBounds(300,400,200,15);
 
   // setting up 600$ animal question
   question600Two = new JPanel();
   question600Two.setLayout(null);
-  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  vg200q = new JLabel("The king of the jungle");
   answerboxa600q = new JTextField();
   question600Two.add(vg200q);
-  vg200q.setBounds(270, 100, 700, 50);
+  vg200q.setBounds(280, 100, 700, 50);
   question600Two.add(answerboxa600q);
   answerboxa600q.setBounds(300,400,200,15);
 
   // setting up 600$ pokemon question
   question600Three = new JPanel();
   question600Three.setLayout(null);
-  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  vg200q = new JLabel("The large rock snake-like pokemon");
   answerboxp600q = new JTextField();
   question600Three.add(vg200q);
   vg200q.setBounds(270, 100, 700, 50);
@@ -326,17 +328,17 @@ public class Main implements Runnable, ActionListener{
   // setting up 800$ video game question
   question800Zero = new JPanel();
   question800Zero.setLayout(null);
-  vg200q = new JLabel("The 2nd generation of XBOX");
+  vg200q = new JLabel("Popular first person shooter created by Valve in 2012");
   answerboxvg800q = new JTextField();
   question800Zero.add(vg200q);
-  vg200q.setBounds(230, 100, 700, 50);
+  vg200q.setBounds(210, 100, 700, 50);
   question800Zero.add(answerboxvg800q);
   answerboxvg800q.setBounds(300,400,200,15);
 
   // setting up 800$ Marvel question
   question800One = new JPanel();
   question800One.setLayout(null);
-  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  vg200q = new JLabel("Antagonist of 2004 Spider-Man 2");
   answerboxm800q = new JTextField();
   question800One.add(vg200q);
   vg200q.setBounds(270, 100, 700, 50);
@@ -346,27 +348,27 @@ public class Main implements Runnable, ActionListener{
   // setting up 800$ animal question
   question800Two = new JPanel();
   question800Two.setLayout(null);
-  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  vg200q = new JLabel("Large flightleses bird known for sticking its head underground");
   answerboxa800q = new JTextField();
   question800Two.add(vg200q);
-  vg200q.setBounds(270, 100, 700, 50);
+  vg200q.setBounds(240, 100, 700, 50);
   question800Two.add(answerboxa800q);
   answerboxa800q.setBounds(300,400,200,15);
 
   // setting up 800$ pokemon question
   question800Three = new JPanel();
   question800Three.setLayout(null);
-  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  vg200q = new JLabel("Final evolution of starter pokemon squirtle");
   answerboxp800q = new JTextField();
   question800Three.add(vg200q);
-  vg200q.setBounds(270, 100, 700, 50);
+  vg200q.setBounds(260, 100, 700, 50);
   question800Three.add(answerboxp800q);
   answerboxp800q.setBounds(300,400,200,15);
 
   // setting up 1000$ video game question
   question1000Zero = new JPanel();
   question1000Zero.setLayout(null);
-  vg200q = new JLabel("The 2nd generation of XBOX");
+  vg200q = new JLabel("Nintendo 3d platformer known for glitches");
   answerboxvg1000q = new JTextField();
   question1000Zero.add(vg200q);
   vg200q.setBounds(230, 100, 700, 50);
@@ -376,7 +378,7 @@ public class Main implements Runnable, ActionListener{
   // setting up 1000$ Marvel question
   question1000One = new JPanel();
   question1000One.setLayout(null);
-  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  vg200q = new JLabel("Duration Captain America was frozen in the arctic for");
   answerboxm1000q = new JTextField();
   question1000One.add(vg200q);
   vg200q.setBounds(270, 100, 700, 50);
@@ -386,20 +388,20 @@ public class Main implements Runnable, ActionListener{
   // setting up 1000$ animal question
   question1000Two = new JPanel();
   question1000Two.setLayout(null);
-  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  vg200q = new JLabel("Aquatic animal that inspired the Jaws move series");
   answerboxa1000q = new JTextField();
   question1000Two.add(vg200q);
-  vg200q.setBounds(270, 100, 700, 50);
+  vg200q.setBounds(260, 100, 700, 50);
   question1000Two.add(answerboxa1000q);
   answerboxa1000q.setBounds(300,400,200,15);
 
   // setting up 10000$ pokemon question
   question1000Three = new JPanel();
   question1000Three.setLayout(null);
-  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  vg200q = new JLabel("The 2nd generation fire starter pokemon");
   answerboxp1000q = new JTextField();
   question1000Three.add(vg200q);
-  vg200q.setBounds(270, 100, 700, 50);
+  vg200q.setBounds(260, 100, 700, 50);
   question1000Three.add(answerboxp1000q);
   answerboxp1000q.setBounds(300,400,200,15);
 
