@@ -6,6 +6,20 @@ public class Main implements Runnable, ActionListener{
 
   // Class Variables  
   JPanel question200Zero;
+  JPanel question200One;
+  JPanel question200Two;
+  JPanel question200Three;
+
+  JPanel question400Zero;
+  JPanel question400One;
+  JPanel question400Two;
+  JPanel question400Three;
+
+  JPanel question600Zero;
+  JPanel question600One;
+  JPanel question600Two;
+  JPanel question600Three;
+
   JPanel mainPanel;
   JPanel questionBoard;
 
@@ -22,13 +36,26 @@ public class Main implements Runnable, ActionListener{
 
   JLabel vg200q;
   JTextField answerboxvg200q;
+  JTextField answerboxm200q;
+  JTextField answerboxa200q;
+  JTextField answerboxp200q;
+
+  JTextField answerboxvg400q;
+  JTextField answerboxm400q;
+  JTextField answerboxa400q;
+  JTextField answerboxp400q;
+
+  JTextField answerboxvg600q;
+  JTextField answerboxm600q;
+  JTextField answerboxa600q;
+  JTextField answerboxp600q;
   
   CardLayout screens;
 
   // Method to assemble our GUI
   public void run(){
     // Creats a JFrame that is 800 pixels by 600 pixels, and closes when you click on the X
-    JFrame frame = new JFrame("Title");
+    JFrame frame = new JFrame("Jeopardy!");
     // Makes the X button close the program
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     // makes the windows 800 pixel wide by 600 pixels tall
@@ -157,10 +184,106 @@ public class Main implements Runnable, ActionListener{
 //
 //
 // setting up 200$ video game question
-
   question200Zero = new JPanel();
-  vg200q = new JLabel("question here");
+  question200Zero.setLayout(null);
+  vg200q = new JLabel("Recognized as the first ever video game, created by William Higinbotham");
   answerboxvg200q = new JTextField();
+  question200Zero.add(vg200q);
+  vg200q.setBounds(150, 100, 700, 50);
+  question200Zero.add(answerboxvg200q);
+  answerboxvg200q.setBounds(300,400,200,15);
+
+  // setting up 200$ Marvel question
+  question200One = new JPanel();
+  question200One.setLayout(null);
+  vg200q = new JLabel("The identity of Iron Man");
+  answerboxm200q = new JTextField();
+  question200One.add(vg200q);
+  vg200q.setBounds(325, 100, 700, 50);
+  question200One.add(answerboxm200q);
+  answerboxm200q.setBounds(300,400,200,15);
+
+  // setting up 200$ Animal question
+  question200Two = new JPanel();
+  question200Two.setLayout(null);
+  vg200q = new JLabel("Reptile with a hard shell on its back");
+  answerboxa200q = new JTextField();
+  question200Two.add(vg200q);
+  vg200q.setBounds(275, 100, 700, 50);
+  question200Two.add(answerboxa200q);
+  answerboxa200q.setBounds(300,400,200,15);
+
+  // setting up 200$ Pokemon question
+  question200Three = new JPanel();
+  question200Three.setLayout(null);
+  vg200q = new JLabel("Purple pokeball with 100% capture chance");
+  answerboxp200q = new JTextField();
+  question200Three.add(vg200q);
+  vg200q.setBounds(240, 100, 700, 50);
+  question200Three.add(answerboxp200q);
+  answerboxp200q.setBounds(300,400,200,15);
+
+  // setting up 400$ video game question
+  question400Zero = new JPanel();
+  question400Zero.setLayout(null);
+  vg200q = new JLabel("The first Nintendo console");
+  answerboxvg400q = new JTextField();
+  question400Zero.add(vg200q);
+  vg200q.setBounds(240, 100, 700, 50);
+  question400Zero.add(answerboxvg400q);
+  answerboxvg400q.setBounds(300,400,200,15);
+
+  // setting up 400$ Marvel question
+  question400One = new JPanel();
+  question400One.setLayout(null);
+  vg200q = new JLabel("The original actor of Spider-Man in 2002 Spider-Man");
+  answerboxm400q = new JTextField();
+  question400One.add(vg200q);
+  vg200q.setBounds(180, 100, 700, 50);
+  question400One.add(answerboxm400q);
+  answerboxm400q.setBounds(300,400,200,15);
+
+  // setting up 400$ Animal question
+  question400Two = new JPanel();
+  question400Two.setLayout(null);
+  vg200q = new JLabel("White bird sterotypically released at weddings");
+  answerboxa400q = new JTextField();
+  question400Two.add(vg200q);
+  vg200q.setBounds(200, 100, 700, 50);
+  question400Two.add(answerboxa400q);
+  answerboxa400q.setBounds(300,400,200,15);
+
+  // setting up 400$ Pokemon question
+  question400Three = new JPanel();
+  question400Three.setLayout(null);
+  vg200q = new JLabel("The country Pokemon originated from");
+  answerboxp400q = new JTextField();
+  question400Three.add(vg200q);
+  vg200q.setBounds(230, 100, 700, 50);
+  question400Three.add(answerboxp400q);
+  answerboxp400q.setBounds(300,400,200,15);
+
+  // setting up 600$ video game question
+  question600Zero = new JPanel();
+  question600Zero.setLayout(null);
+  vg200q = new JLabel("The 2nd generation of XBOX");
+  answerboxvg600q = new JTextField();
+  question600Zero.add(vg200q);
+  vg200q.setBounds(230, 100, 700, 50);
+  question600Zero.add(answerboxvg600q);
+  answerboxvg600q.setBounds(300,400,200,15);
+
+  // setting up 600$ Marvel question
+  question600One = new JPanel();
+  question600One.setLayout(null);
+  vg200q = new JLabel("Stanley Lee's hit catchphrase");
+  answerboxm600q = new JTextField();
+  question600One.add(vg200q);
+  vg200q.setBounds(270, 100, 700, 50);
+  question600One.add(answerboxm600q);
+  answerboxm600q.setBounds(300,400,200,15);
+
+  
 
   //create screen jpanel manager
   screens = new CardLayout();
@@ -168,7 +291,16 @@ public class Main implements Runnable, ActionListener{
   mainPanel.setLayout(screens);
   // add screens to CardLayout
   mainPanel.add(questionBoard, "questionBoard");
-  mainPanel.add(question200Zero, "videoGame200");
+  mainPanel.add(question200Zero, "videoGame200Zero");
+  mainPanel.add(question200One, "marvel200Zero");
+  mainPanel.add(question200Two, "animal200Zero");
+  mainPanel.add(question200Three, "pokemon200Zero");
+  mainPanel.add(question400Zero, "videoGame400Zero");
+  mainPanel.add(question400One, "marvel400Zero");
+  mainPanel.add(question400Two, "animal400Zero");
+  mainPanel.add(question400Three, "pokemon400Zero");
+  mainPanel.add(question600Zero, "videoGame600Zero");
+  mainPanel.add(question600One, "marvel600Zero");
   frame.add(mainPanel);
   screens.show(mainPanel, "questionBoard");
   }
@@ -179,11 +311,36 @@ public class Main implements Runnable, ActionListener{
     String command = e.getActionCommand();
 
   if(command.equals("200" + "0")){
-    screens.show(mainPanel, "videoGame200");
+    screens.show(mainPanel, "videoGame200Zero");
   }
-
+  if(command.equals("200" + "1")){
+    screens.show(mainPanel, "marvel200Zero");
   }
-
+  if(command.equals("200" + "2")){
+    screens.show(mainPanel, "animal200Zero");
+  }
+  if(command.equals("200" + "3")){
+    screens.show(mainPanel, "pokemon200Zero");
+  }
+  if(command.equals("400" + "0")){
+    screens.show(mainPanel, "videoGame400Zero");
+  }
+  if(command.equals("400" + "1")){
+    screens.show(mainPanel, "marvel400Zero");
+  }
+  if(command.equals("400" + "2")){
+    screens.show(mainPanel, "animal400Zero");
+  }
+  if(command.equals("400" + "3")){
+    screens.show(mainPanel, "pokemon400Zero");
+  }
+  if(command.equals("600" + "0")){
+    screens.show(mainPanel, "videoGame600Zero");
+  }
+  if(command.equals("600" + "1")){
+    screens.show(mainPanel, "marvel600Zero");
+  }
+  }
   // Main method to start our program
   public static void main(String[] args){
     // Creates an instance of our program
