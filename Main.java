@@ -6,7 +6,28 @@ public class Main implements Runnable, ActionListener{
 
   // Class Variables  
 
-  int score;
+  int score = 0;
+
+  String answervg200;
+  String answerm200;
+  String answera200;
+  String answerp200;
+  String answervg400;
+  String answerm400;
+  String answera400;
+  String answerp400;
+  String answervg600;
+  String answerm600;
+  String answera600;
+  String answerp600;
+  String answervg800;
+  String answerm800;
+  String answera800;
+  String answerp800;
+  String answervg1000;
+  String answerm1000;
+  String answera1000;
+  String answerp1000;
 
   JPanel question200Zero;
   JPanel question200One;
@@ -245,7 +266,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonvg200 = new JButton("ENTER ANSWER");
   enterButtonvg200.setBounds(300,250,200,100);
   question200Zero.add(enterButtonvg200);
-  enterButtonvg200.setActionCommand("enter");
+  enterButtonvg200.setActionCommand("vg200enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -265,7 +286,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonm200 = new JButton("ENTER ANSWER");
   enterButtonm200.setBounds(300,250,200,100);
   question200One.add(enterButtonm200);
-  enterButtonm200.setActionCommand("enter");
+  enterButtonm200.setActionCommand("m200enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -285,7 +306,7 @@ public class Main implements Runnable, ActionListener{
   enterButtona200 = new JButton("ENTER ANSWER");
   enterButtona200.setBounds(300,250,200,100);
   question200Two.add(enterButtona200);
-  enterButtona200.setActionCommand("enter");
+  enterButtona200.setActionCommand("a200enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -305,7 +326,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonp200 = new JButton("ENTER ANSWER");
   enterButtonp200.setBounds(300,250,200,100);
   question200Three.add(enterButtonp200);
-  enterButtonp200.setActionCommand("enter");
+  enterButtonp200.setActionCommand("p200enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -325,7 +346,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonvg400 = new JButton("ENTER ANSWER");
   enterButtonvg400.setBounds(300,250,200,100);
   question400Zero.add(enterButtonvg400);
-  enterButtonvg400.setActionCommand("enter");
+  enterButtonvg400.setActionCommand("vg400enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -345,7 +366,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonm400 = new JButton("ENTER ANSWER");
   enterButtonm400.setBounds(300,250,200,100);
   question400One.add(enterButtonm400);
-  enterButtonm400.setActionCommand("enter");
+  enterButtonm400.setActionCommand("m400enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -365,7 +386,7 @@ public class Main implements Runnable, ActionListener{
   enterButtona400 = new JButton("ENTER ANSWER");
   enterButtona400.setBounds(300,250,200,100);
   question400Two.add(enterButtona400);
-  enterButtona400.setActionCommand("enter");
+  enterButtona400.setActionCommand("a400enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -385,7 +406,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonp400 = new JButton("ENTER ANSWER");
   enterButtonp400.setBounds(300,250,200,100);
   question400Three.add(enterButtonp400);
-  enterButtonp400.setActionCommand("enter");
+  enterButtonp400.setActionCommand("p400enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -405,7 +426,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonvg600 = new JButton("ENTER ANSWER");
   enterButtonvg600.setBounds(300,250,200,100);
   question600Zero.add(enterButtonvg600);
-  enterButtonvg600.setActionCommand("enter");
+  enterButtonvg600.setActionCommand("vg600enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -425,7 +446,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonm600 = new JButton("ENTER ANSWER");
   enterButtonm600.setBounds(300,250,200,100);
   question600One.add(enterButtonm600);
-  enterButtonm600.setActionCommand("enter");
+  enterButtonm600.setActionCommand("m600enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -445,7 +466,7 @@ public class Main implements Runnable, ActionListener{
   enterButtona600 = new JButton("ENTER ANSWER");
   enterButtona600.setBounds(300,250,200,100);
   question600Two.add(enterButtona600);
-  enterButtona600.setActionCommand("enter");
+  enterButtona600.setActionCommand("a600enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -465,7 +486,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonp600 = new JButton("ENTER ANSWER");
   enterButtonp600.setBounds(300,250,200,100);
   question600Three.add(enterButtonp600);
-  enterButtonp600.setActionCommand("enter");
+  enterButtonp600.setActionCommand("p600enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -485,7 +506,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonvg800 = new JButton("ENTER ANSWER");
   enterButtonvg800.setBounds(300,250,200,100);
   question800Zero.add(enterButtonvg800);
-  enterButtonvg800.setActionCommand("enter");
+  enterButtonvg800.setActionCommand("vg800enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -505,7 +526,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonm800 = new JButton("ENTER ANSWER");
   enterButtonm800.setBounds(300,250,200,100);
   question800One.add(enterButtonm800);
-  enterButtonm800.setActionCommand("enter");
+  enterButtonm800.setActionCommand("m800enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -525,7 +546,7 @@ public class Main implements Runnable, ActionListener{
   enterButtona800 = new JButton("ENTER ANSWER");
   enterButtona800.setBounds(300,250,200,100);
   question800Two.add(enterButtona800);
-  enterButtona800.setActionCommand("enter");
+  enterButtona800.setActionCommand("a800enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -545,7 +566,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonp800 = new JButton("ENTER ANSWER");
   enterButtonp800.setBounds(300,250,200,100);
   question800Three.add(enterButtonp800);
-  enterButtonp800.setActionCommand("enter");
+  enterButtonp800.setActionCommand("p800enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -565,7 +586,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonvg1000 = new JButton("ENTER ANSWER");
   enterButtonvg1000.setBounds(300,250,200,100);
   question1000Zero.add(enterButtonvg1000);
-  enterButtonvg1000.setActionCommand("enter");
+  enterButtonvg1000.setActionCommand("vg1000enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -585,7 +606,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonm1000 = new JButton("ENTER ANSWER");
   enterButtonm1000.setBounds(300,250,200,100);
   question1000One.add(enterButtonm1000);
-  enterButtonm1000.setActionCommand("enter");
+  enterButtonm1000.setActionCommand("m1000enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -605,7 +626,7 @@ public class Main implements Runnable, ActionListener{
   enterButtona1000 = new JButton("ENTER ANSWER");
   enterButtona1000.setBounds(300,250,200,100);
   question1000Two.add(enterButtona1000);
-  enterButtona1000.setActionCommand("enter");
+  enterButtona1000.setActionCommand("a1000enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -625,7 +646,7 @@ public class Main implements Runnable, ActionListener{
   enterButtonp1000 = new JButton("ENTER ANSWER");
   enterButtonp1000.setBounds(300,250,200,100);
   question1000Three.add(enterButtonp1000);
-  enterButtonp1000.setActionCommand("enter");
+  enterButtonp1000.setActionCommand("p1000enter");
   returnButton = new JButton("RETURN TO BOARD");
   returnButton.setBounds(10,450,200,100);
   returnButton.setActionCommand("return");
@@ -752,29 +773,168 @@ public class Main implements Runnable, ActionListener{
     screens.show(mainPanel, "questionBoard");
   }
   // reads the textfield when enter button is pressed and puts the text into string variable
-  if(command.equals("enter")){
+  if(command.equals("vg200enter")){
+    screens.show(mainPanel, "questionBoard");
     String answervg200 = answerboxvg200q.getText();
+    if(answervg200 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("m200enter")){
+    screens.show(mainPanel, "questionBoard");
     String answerm200 = answerboxm200q.getText();
+    if(answerm200 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("a200enter")){
+    screens.show(mainPanel, "questionBoard");
     String answera200 = answerboxa200q.getText();
+    if(answera200 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("p200enter")){
+    screens.show(mainPanel, "questionBoard");
     String answerp200 = answerboxp200q.getText();
+    if(answerp200 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("vg400enter")){
+    screens.show(mainPanel, "questionBoard");
     String answervg400 = answerboxvg400q.getText();
+    if(answervg400 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("m400enter")){
+    screens.show(mainPanel, "questionBoard");
     String answerm400 = answerboxm400q.getText();
+    if(answerm400 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("a400enter")){
+    screens.show(mainPanel, "questionBoard");
     String answera400 = answerboxa400q.getText();
+    if(answera400 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("p400enter")){
+    screens.show(mainPanel, "questionBoard");
     String answerp400 = answerboxp400q.getText();
+    if(answerp400 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("vg600enter")){
+    screens.show(mainPanel, "questionBoard");
     String answervg600 = answerboxvg600q.getText();
+    if(answervg600 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("m600enter")){
+    screens.show(mainPanel, "questionBoard");
     String answerm600 = answerboxm600q.getText();
+    if(answerm600 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("a600enter")){
+    screens.show(mainPanel, "questionBoard");
     String answera600 = answerboxa600q.getText();
+    if(answera600 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("p600enter")){
+    screens.show(mainPanel, "questionBoard");
     String answerp600 = answerboxp600q.getText();
+    if(answerp600 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("vg800enter")){
+    screens.show(mainPanel, "questionBoard");
     String answervg800 = answerboxvg800q.getText();
+    if(answervg800 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("m800enter")){
+    screens.show(mainPanel, "questionBoard");
     String answerm800 = answerboxm800q.getText();
+    if(answerm800 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("a800enter")){
+    screens.show(mainPanel, "questionBoard");
     String answera800 = answerboxa800q.getText();
+    if(answera800 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("p800enter")){
+    screens.show(mainPanel, "questionBoard");
     String answerp800 = answerboxp800q.getText();
+    if(answerp800 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("vg1000enter")){
+    screens.show(mainPanel, "questionBoard");
     String answervg1000 = answerboxvg1000q.getText();
+    if(answervg1000 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("m1000enter")){
+    screens.show(mainPanel, "questionBoard");
     String answerm1000 = answerboxm1000q.getText();
-    String answera1000 = answerboxa1000q.getText();
+    if(answerm1000 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("a1000enter")){
+    screens.show(mainPanel, "questionBoard");
+    String answerm1000 = answerboxm1000q.getText();
+    if(answerm1000 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
+  }
+  if(command.equals("p1000enter")){
+    screens.show(mainPanel, "questionBoard");
     String answerp1000 = answerboxp1000q.getText();
+    if(answerp1000 == ("Whatispong")){
+      score = score + 200;
+      System.out.println("Score: $" + score);
+    }
   }
   }
+
   // Main method to start our program
   public static void main(String[] args){
     // Creates an instance of our program
